@@ -6,6 +6,7 @@ import {
   ReferenceInput,
   SelectInput
 } from "react-admin";
+import LogProps from "./Components/LogProps";
 
 const PostEdit = props => (
   <Edit {...props}>
@@ -15,7 +16,7 @@ const PostEdit = props => (
         <SelectInput optionText="name" />
       </ReferenceInput>
       <TextInput source="title" />
-
+      <LogProps />
       <TextInput multiline source="body" />
     </SimpleForm>
   </Edit>
